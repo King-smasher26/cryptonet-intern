@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  /* background: url('https://img.freepik.com/free-photo/lone-tree_181624-46361.jpg?w=826&t=st=1700483799~exp=1700484399~hmac=f5cb7926e6e849d039409df982b489945908859ed406eb7cf8ae71c3345be1fa'); */
+  
+}
+
+#loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: #3f4b6d;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  color: black;
+}
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+
+.my-card{
+  width: 430px;
+  height: 180px;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding:1px 1px 1px 1px;
+  background: linear-gradient(-45deg, #041437, rgb(44, 5, 111), #14536a, #19362f);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: white;
+}
+.my-card:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
+/* .my-card:hover{
+  background: rgb(2,0,36);
+
+} */
+.user-img{
+  width: 120px;
+  height: 120px;
+  border: 2px solid #f5f5f5;
+  border-radius: 5px;
+}
+.content-div{
+  /* border: 1px solid black; */
+  width: 260px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: column; */
+}
+.content{
+  /* border: 2px solid black; */
+  width: 120px;
+  display: flex;
+  height: 130px;
+  flex-direction: column;
+  font-size: 15px;
+  letter-spacing: 2px;
+  /* justify-content:space-around; */
+  align-items:normal;
+  line-height: 13px;
+}
+.content p{
+  width: 120px;
+  /* border: 1px solid black; */
+}
